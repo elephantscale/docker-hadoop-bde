@@ -101,7 +101,8 @@ $   hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2
 ### Step-2: Let's calculate PI
 
 ```bash
-$   hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.1.jar  pi  4 100
+$   hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.1.jar  \
+           pi  4 100
 ```
 
 This will print out output like this
@@ -136,7 +137,8 @@ $   hdfs dfs -ls /wordcount/in/
 **Run wordcount**
 
 ```bash
-$    hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.1.jar  wordcount  /wordcount/in  /wordcount/out
+$    hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.1.jar  \
+            wordcount  /wordcount/in  /wordcount/out
 ```
 
 The output will look like 
